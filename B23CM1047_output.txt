@@ -1,7 +1,6 @@
 Total samples: 928
-Classes: {'SPORT', 'POLITICS'}
-
-===== BoW + Naive Bayes =====
+Classes: {'POLITICS', 'SPORT'}
+title
 Accuracy: 1.0
               precision    recall  f1-score   support
 
@@ -12,8 +11,7 @@ Accuracy: 1.0
    macro avg       1.00      1.00      1.00       186
 weighted avg       1.00      1.00      1.00       186
 
-
-===== TF-IDF + Logistic Regression =====
+title
 Accuracy: 0.989247311827957
               precision    recall  f1-score   support
 
@@ -24,8 +22,7 @@ Accuracy: 0.989247311827957
    macro avg       0.99      0.99      0.99       186
 weighted avg       0.99      0.99      0.99       186
 
-
-===== TF-IDF (n-grams) + Linear SVM =====
+title
 Accuracy: 0.989247311827957
               precision    recall  f1-score   support
 

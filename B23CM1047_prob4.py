@@ -10,12 +10,11 @@ from sklearn.metrics import accuracy_score, classification_report
 def load_bbc_data(csv_path="bbc_data.csv"):
     df = pd.read_csv(csv_path)
 
-    # Keep only sport and politics
     df = df[df["labels"].isin(["sport", "politics"])].copy()
 
-    # Convert to required format
+
     texts = df["data"].astype(str).str.lower().tolist()
-    labels = df["labels"].str.upper().tolist()   # SPORT / POLITICS
+    labels = df["labels"].str.upper().tolist()   
 
     return texts, labels
 
